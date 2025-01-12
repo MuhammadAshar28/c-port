@@ -1,0 +1,93 @@
+.icon{
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+
+.skillsSection {
+    padding: 3rem 1.5rem;
+    background-color: #001f42; /* Soft background color */
+    color: #333;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+    color: #ffffff;
+}
+
+/* Grid layout for skills */
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust to screen size */
+    gap: 2rem;
+    justify-items: center; /* Center align items */
+    align-items: center;
+}
+
+/* Circular skill card with geometrical alignment */
+.skillCard {
+    background: #ffffff; /* White background for cards */
+    border-radius: 50%; /* Makes the card circular */
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column; /* Aligns icon and text vertically */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Adds depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skillCard:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0px 8px 16px rgba(255, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Icon styling inside circular card */
+.skillIcon {
+    font-size: 3rem;
+    color: #0070f3; /* Primary blue color for icons */
+    margin-bottom: 0.5rem; /* Space between icon and name */
+    transition: color 0.3s ease;
+}
+
+.skillCard:hover .skillIcon {
+    color: #000000; /* Darker blue on hover */
+}
+
+/* Skill name text inside card */
+.skillName {
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
+    color: #444;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .skillsSection {
+        padding: 2rem 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .skillCard {
+        width: 120px;
+        height: 120px; /* Smaller cards for mobile */
+    }
+
+    .skillIcon {
+        font-size: 2.5rem;
+    }
+
+    .skillName {
+        font-size: 0.9rem;
+    }
+}

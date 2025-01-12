@@ -1,0 +1,203 @@
+/* 
+.contactlinkscontainer {
+    max-width: 600px;
+    margin:  auto;
+    margin-top: 55px;
+    padding: 20px;
+    background-color: #00e1ff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(3, 1, 1, 0.1);
+    text-align: center;
+  }
+  
+  .contactlinkscontainer h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #ffffff;
+  }
+  
+  .contactlinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .contactlink {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #a6ff00;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: #0077b5; 
+    transition: background-color 0.3s;
+  }
+  
+  .contactlink:hover {
+    background-color: #005f8a;
+  }
+  
+  .contacticon {
+    margin-right: 10px;
+    font-size: 1.6rem;
+  }
+  
+  .contactlink:nth-child(2) {
+    background-color: #d14836; 
+  }
+  
+  .contactlink:nth-child(2):hover {
+    background-color: #9e2a1e;
+  }
+  
+
+  .typedWrapper {
+    color: black;
+    font-weight: 700 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:45px;
+  }
+
+   */
+
+
+   .contactlinkscontainer {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 55px;
+    padding: 20px;
+    background-color: #00e1ff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(3, 1, 1, 0.1);
+    text-align: center;
+}
+
+.contactlinkscontainer h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.contactlinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.contactlink {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #a6ff00;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: #0077b5; /* LinkedIn color */
+    transition: background-color 0.3s;
+}
+
+.contactlink:hover {
+    background-color: #005f8a;
+}
+
+.contacticon {
+    margin-right: 10px;
+    font-size: 1.6rem;
+}
+
+.contactlink:nth-child(2) {
+    background-color: #d14836; /* Email color */
+}
+
+.contactlink:nth-child(2):hover {
+    background-color: #9e2a1e;
+}
+
+.typedWrapper {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+
+/* Responsive Styles */
+
+/* Mobile */
+@media (max-width: 768px) {
+    .contactlinkscontainer {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .contactlinkscontainer h2 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .contactlink {
+        font-size: 1rem; /* Adjust font size for links */
+        padding: 8px 16px; /* Adjust padding for links */
+    }
+
+    .contacticon {
+        font-size: 1.4rem; /* Adjust icon size */
+    }
+
+    .typedWrapper {
+        font-size: 30px; /* Adjust font size for typed wrapper */
+    }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1023px) {
+    .contactlinkscontainer {
+        padding: 18px; /* Slightly reduce padding for tablet */
+    }
+
+    .contactlinkscontainer h2 {
+        font-size: 1.6rem; /* Adjust heading size */
+    }
+
+    .contactlink {
+        font-size: 1.1rem; /* Adjust font size for links */
+        padding: 9px 18px; /* Adjust padding for links */
+    }
+
+    .contacticon {
+        font-size: 1.5rem; /* Adjust icon size */
+    }
+
+    .typedWrapper {
+        font-size: 40px; /* Adjust font size for typed wrapper */
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .contactlinkscontainer {
+        padding: 20px; /* Maintain padding for desktop */
+    }
+
+    .contactlinkscontainer h2 {
+        font-size: 1.8rem; /* Maintain heading size */
+    }
+
+    .contactlink {
+        font-size: 1.2rem; /* Maintain font size for links */
+        padding: 10px 20px; /* Maintain padding for links */
+    }
+
+    .contacticon {
+        font-size: 1.6rem; /* Maintain icon size */
+    }
+
+    .typedWrapper {
+        font-size: 45px; /* Maintain font size for typed wrapper */
+    }
+}
